@@ -2,7 +2,7 @@
 library(shiny)
 library(tidyverse)
 
-dat <- readr::read_csv('~/FFpixel/pixel_size.csv', show_col_types = FALSE)
+dat <- readr::read_csv('pixel_size.csv', show_col_types = FALSE)
 
 pixel_size_output <- function(type, number){
   
@@ -10,7 +10,7 @@ pixel_size_output <- function(type, number){
     
     rr_pixel <- number * (95/5) + 5 - 19
     
-    return(tibble(`Pixel Dimension` = rr_pixel))
+    return(tibble(`Pixel Dimension` = as.character(rr_pixel)))
     
   }
   
