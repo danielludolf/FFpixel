@@ -61,7 +61,7 @@ ui <- fluidPage(
     ui <- fluidPage(
       radioButtons("metric", "Is the Pixel Size for a Proportion or Relative Risk?", 
                    c("Proportion (Normal)", "Proportion (Opposite)", "Relative Risk"), inline = T),
-      numericInput("num", "Value", value = 0, min = 0, max = 1)
+      numericInput("num", "Value", value = 0)
     ),
 
     # output in console text format
