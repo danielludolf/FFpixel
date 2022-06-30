@@ -57,7 +57,7 @@ ui <- fluidPage(
 
     titlePanel("Pixel Size for Proportions and Relative Risk"),
 
-    # Create Radio Button Options and numeric input
+    # create radio button options and numeric input
     ui <- fluidPage(
       radioButtons("metric", "Is the Pixel Size for a Proportion or Relative Risk?", 
                    c("Proportion (Normal)", "Proportion (Opposite)", "Relative Risk"), inline = T),
